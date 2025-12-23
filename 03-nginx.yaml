@@ -1,6 +1,6 @@
 - name: nginx install 
-  hosts: frontend
-  become: yes
+  hosts: local
+  become: yes # giving sudo access
   tasks:
   - name: install nginx server
     ansible.builtin.package:
