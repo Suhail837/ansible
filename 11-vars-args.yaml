@@ -1,0 +1,7 @@
+- name: variables from inventory
+  hosts: local
+  connection: local
+  tasks:
+  - name: handling comment vars in inventory
+    ansible.builtin.debug:
+      msg: "Hello i m learning {{course}} , time taken will be : {{duration}} , trainer is : {{trainer}}"
