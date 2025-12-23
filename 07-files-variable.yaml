@@ -6,4 +6,4 @@
   tasks:
   - name: printing varaiable from other files
     ansible.builtin.debug:
-    msg: "Hello {{course}} duration is {{duration}} and trainer is {{trainer}} "
+      msg: "Hello {{course}} duration is {{duration}} and trainer is {{trainer}} "
