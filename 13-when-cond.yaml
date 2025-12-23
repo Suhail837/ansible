@@ -1,6 +1,5 @@
 - name: when condition
-  hosts: local
-  connection: local
+  hosts: 100.48.49.110
   vars:
     number: 70 
   tasks:
