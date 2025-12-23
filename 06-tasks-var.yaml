@@ -12,6 +12,14 @@
       ansible.builtin.debug:
       # variable reference should be in ".....  "
         msg: "Hello {{course}} , course duration: {{duration}} , trainer is {{trainer}}"
+      
+    - name: print variable interactions
+      ansible.builtin.debug:
+      # variable reference should be in ".....  "
+        msg: "Hello {{course}} , course duration: {{duration}} , trainer is {{trainer}}"
+
+  
+  
 
     
 
