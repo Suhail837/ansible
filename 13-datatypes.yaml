@@ -1,6 +1,5 @@
 - name: data types
-  hosts: localhost
-  connection: local
+  hosts: frontend
   vars:
     DURATION: 120 # number
     COURSE: "devsecops woth aws"
