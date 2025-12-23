@@ -1,0 +1,18 @@
+- name: use variable
+  hosts: local
+  connection: local
+  vars:
+    course: Devops
+    duration: 10 hours
+    trainer: suhail
+  tasks:
+    - name: print variable interactions
+      vars:
+        course: ansible
+      ansible.builtin.debug:
+      # variable reference should be in ".....  "
+        msg: "Hello {{course}} , course duration: {{duration}} , trainer is {{trainer}}"
+
+    
+
+    
