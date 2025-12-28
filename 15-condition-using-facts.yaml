@@ -1,5 +1,6 @@
 - name: condition ansible_facts
   hosts: local
+  connection: local
   become: yes
   tasks:
   - name: install nginx in redhat # as we used redhat in server itused 
