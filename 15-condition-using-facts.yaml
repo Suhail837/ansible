@@ -1,5 +1,5 @@
 - name: condition ansible_facts
-  hosts: frontend
+  hosts: display
   become: yes
   tasks:
   - name: install nginx in redhat # as we used redhat in server itused 
