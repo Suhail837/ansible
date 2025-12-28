@@ -8,7 +8,7 @@
       state: present
     when: ansible_os_family == "RedHat"
 
-    - name: install nginx in debian  # in this it is skippped
+  - name: install nginx in debian  # in this it is skippped
     ansible.builtin.apt:
       name: nginx
       state: present
