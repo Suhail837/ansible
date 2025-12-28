@@ -9,7 +9,7 @@
     when: ansible_os_family == "RedHat"
 
     - name: install nginx in debian  # in this it is skippped
-    ansible.builtin.dnf:
+    ansible.builtin.apt:
       name: nginx
       state: present
     when: ansible_os_family == "Debian"
