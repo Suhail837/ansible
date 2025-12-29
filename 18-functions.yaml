@@ -1,7 +1,19 @@
 - name: functions!
   hosts: display
   become: yes
+  vars:
+    person: "suhail,viyan,arhan,nouman"
   tasks:
   - name: hello from play1 and task1
     ansible.builtin.debug:
-      msg: "hello , {{ person | default('ramesh')}} "
+      msg: "hello , {{ person | default('ramesh')}} "  # if variable is not located as persos it takes defaut as ramesh 
+
+  
+  - name: print as string
+    ansible.builtin.debug:
+      msg: "hello , {{ person }} "  # print as string
+
+  - name: print as list
+    ansible.builtin.debug:
+      msg: "hello , {{ person | split(',')}} "  # print as list
+
