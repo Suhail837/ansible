@@ -1,7 +1,7 @@
 - name: functions!
-  hosts: local
-  connection: local
+  hosts: display
+  become: yes
   tasks:
   - name: hello from play1 and task1
     ansible.builtin.debug:
-      msg: "hello , "
+      msg: "hello , {{ person | default('ramesh')}} "
