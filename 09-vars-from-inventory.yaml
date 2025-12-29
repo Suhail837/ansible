@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-  - name: print details from inventory
+  - name: print details from inventory # in inventory.yaml file we entered [local:vars] to store the value
     ansible.builtin.debug:
       msg: "Hello i m learning {{course}} , time taken will be : {{duration}} , trainer is : {{trainer}} "

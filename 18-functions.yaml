@@ -1,7 +1,7 @@
-- name: functions
+- name: functions!
   hosts: local
   connection: local
   tasks:
-  - name: check undifined variables
+  - name: hello from play1 and task1
     ansible.builtin.debug:
-      msg: "Hello , {{ person | default('ramesh')}}"
+      msg: "hello , "
